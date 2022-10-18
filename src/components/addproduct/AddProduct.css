@@ -1,0 +1,10 @@
+.allForm{
+    display: flex;
+    width: 20vw;
+    align-content: stretch;
+    flex-direction: column;
+    margin-left: 40%;
+}
+    .outlined-basic{
+        padding-top: 5vh;
+    }

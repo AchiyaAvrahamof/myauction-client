@@ -1,0 +1,27 @@
+.imgAndDis{
+    display: flex;
+    justify-content: space-around;
+}
+.DateAndPrice{
+    display: flex;
+    padding-top: 8vh;
+    padding-left: 15vw;
+}
+.offerBTMGrid{
+    padding-top: 10vh;
+}
+.offerBTM{
+    background-color: rgba(69, 130, 163, 0.712) !important;
+    color: aliceblue !important;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
