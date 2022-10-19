@@ -6,6 +6,7 @@ In our auction web application you just need to upload your product and that it,
 - [Table Of Contents](#Table)
 - [Why it made and why you should use it](#why)
 - [How to run](#run)
+- [Screenshots](#Screenshots)
 
 
 ## Why it made and why you should use it <a name="why"></a>
@@ -23,18 +24,18 @@ In the project directory, you can run:
 
 3.run `npm start`
 
+4.Navigate to `http://localhost:3000`.
+
 1.Clone the server repo.
 
 2.Run `npm install`.
 
 3.run `nodemon server.js`.
 
-## b
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots <a name="Screenshots"></a>
+![alt text](https://res.cloudinary.com/dptzubs72/image/upload/v1666168330/2022-10-19_1_qhivtn.png)
+![alt text](image.jpg)
+![alt text](image.jpg)
 
 ### `npm test`
 
