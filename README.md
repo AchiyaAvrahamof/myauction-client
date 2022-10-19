@@ -33,7 +33,7 @@ In the project directory, you can run:
 3.run `nodemon server.js`.
 
 ## Screenshots <a name="Screenshots"></a>
-!alt text(https://res.cloudinary.com/dptzubs72/image/upload/v1666168462/2022-10-19_1_tacy2m.png)
+![alt text](https://res.cloudinary.com/dptzubs72/image/upload/v1666168462/2022-10-19_1_tacy2m.png)
 ![alt text](image.jpg)
 ![alt text](image.jpg)
 
