@@ -14,7 +14,7 @@ In our auction web application you just need to upload your product and that it,
 3. It easy to use
 
 
-##Running the project <a name="run"></a>
+## Running the project <a name="run"></a>
 
 In the project directory, you can run:
 1.Clone the repo.
