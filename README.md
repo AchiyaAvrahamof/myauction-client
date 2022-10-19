@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Auction site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In our auction web application you just need to upload your product and that it,when the auction ended we will let you know who is winner.
 
 ## Available Scripts
 
