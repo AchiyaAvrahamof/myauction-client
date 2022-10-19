@@ -3,9 +3,15 @@
 In our auction web application you just need to upload your product and that it,when the auction ended we will let you know who is winner.
 
 ## Table Of Contents <a name="Table"></a>
-- Why was Goolo made and why you should use it
+- [Why it made and why you should use it](#Table)
 - [Table Of Contents](#Table)
-- Third item
+
+## Why it made and why you should use it <a name="why"></a>
+1. Because everyone has products at home that they don't need so why not offer them for sale
+2. You don't have to determine the market price is the one that determines
+3. It easy to use
+
+
 
 In the project directory, you can run:
 
