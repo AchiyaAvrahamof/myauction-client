@@ -51,13 +51,13 @@ product page shows all the data and allows you to give a bid
 ![alt text](https://res.cloudinary.com/dptzubs72/image/upload/v1666169269/2022-10-19_6_gnrcyb.png)
 
 ## Technologies <a name="Technologies"></a>
-   ##Client
+   Client:
    
    -ReactJs
    
    -Redux
    
-   ##Server
+   Server:
    
    -Node.js
    
