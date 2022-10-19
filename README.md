@@ -5,6 +5,7 @@ In our auction web application you just need to upload your product and that it,
 ## Table Of Contents <a name="Table"></a>
 - [Table Of Contents](#Table)
 - [Why it made and why you should use it](#why)
+- [How to run](#run)
 
 
 ## Why it made and why you should use it <a name="why"></a>
@@ -13,6 +14,7 @@ In our auction web application you just need to upload your product and that it,
 3. It easy to use
 
 
+##Running the project <a name="run"></a>
 
 In the project directory, you can run:
 1.Clone the repo.
