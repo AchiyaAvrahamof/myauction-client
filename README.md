@@ -4,7 +4,7 @@ In our auction web application you just need to upload your product and that it,
 
 ## Table Of Contents
 - Why was Goolo made and why you should use it
-- Second item
+- | Header | Title |
 - Third item
 
 In the project directory, you can run:
