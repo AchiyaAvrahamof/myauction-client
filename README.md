@@ -68,5 +68,5 @@ product page shows all the data and allows you to give a bid
    
 ## What next <a name="next"></a>
 - [x] create my product page
-- [ ] make top baded section
+- [ ] make top bided section
 - [ ] send email to the seller
