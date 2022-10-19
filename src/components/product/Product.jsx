@@ -1,25 +1,20 @@
 import "./product.css";
 import Grid from "@mui/material/Grid";
-import { Button, Input, InputLabel, TextField } from "@mui/material";
-import { useDispatch } from "react-redux";
+import { Button, Input, InputLabel } from "@mui/material";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-function Product(props) {
+function Product() {
   const products = useSelector((state) => state.product.value);
   const productIndex = useSelector((state) => state.productIndex.value);
   const user = useSelector((state) => state.user.value);
   const [bitsegested, setBitsegested] = useState("0");
-  const [TimeE, setTimeE] = useState("2022-10-16T15:45");
   const [timeLeft, setTimeLeft] = useState("");
-  console.log(products);
   const navigate = useNavigate();
 
   let lengthOBited = 0;
@@ -119,7 +114,7 @@ function Product(props) {
           <Grid item xs={4}>
             <img
               src={products[productIndex]?.image}
-              width={"50%"}
+              width={"75%"}
               alt="productimg"
             />
           </Grid>
@@ -127,6 +122,7 @@ function Product(props) {
             <h3>Description</h3>
 
             <p>{products[productIndex]?.description}</p>
+            
           </Grid>
         </Grid>
         <Grid item xs={12} className="DateAndPrice">
@@ -145,40 +141,36 @@ function Product(props) {
                 value={`${products[productIndex]?.howMachTime}`}
               ></Input>
             </InputLabel>
-            Time left
+            Time left: 
             <p>{timeLeft}</p>
           </Grid>
           <Grid item h6 xs={8}>
+            
             <InputLabel>
-              Bit start
+              Bid start:
               <Input
                 name="startpricing"
                 value={`${products[productIndex]?.startBit}`}
               ></Input>
             </InputLabel>
             <InputLabel>
-              Courect Bit
+              Courect Bid:
               <Input name="lastpricing" value={`${LastBid}`}></Input>
             </InputLabel>
             <InputLabel>
-              Bits until now
+              Bids until now:
               <Input name="lastpricing" value={`${lengthOBited}`}></Input>
             </InputLabel>
-          </Grid>
-        </Grid>
-      </Grid>
-
-      <Grid item xs={12} className="offerBTMGrid">
-        {user.email != products[productIndex]?.ownerUserEmail &&
-        timeLeft != "Time ended" ? (
+            {user.email !== products[productIndex]?.ownerUserEmail &&
+        timeLeft !== "Time ended" ? (
           <Button className="offerBTM" onClick={() => submited()}>
             make an offer
           </Button>
         ) : (
           console.log()
         )}
-        {user.email != products[productIndex]?.ownerUserEmail &&
-        timeLeft != "Time ended" ? (
+        {user.email !== products[productIndex]?.ownerUserEmail &&
+        timeLeft !== "Time ended" ? (
           <Input
             placeholder="0"
             type="number"
@@ -189,11 +181,17 @@ function Product(props) {
         ) : (
           console.log()
         )}
-        {timeLeft == "Time ended" ? <p>The sell is end </p> : console.log()}
-        {timeLeft == "Time ended" &&
-        user.email == products[productIndex]?.ownerUserEmail ? (
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid item xs={12} className="offerBTMGrid">
+       
+        {timeLeft === "Time ended" ? <p>The sell is end </p> : console.log()}
+        {timeLeft === "Time ended" &&
+        user.email === products[productIndex]?.ownerUserEmail ? (
           <div>
-            <Button onClick={handleOpen}>Get winner</Button>
+            <Button onClick={handleOpen} sx={{backgroundColor:"black"}}>Get winner</Button>
             <Modal
               open={open}
               onClose={handleClose}
@@ -204,15 +202,10 @@ function Product(props) {
                 <h2 id="parent-modal-title">The winner is:</h2>
                 <p id="parent-modal-description">
                   email:
-                  {
-                    emailWinnner
-                    
-                  }
+                  { emailWinnner }
                   <br />
                  bid:
-                  {
-                    BidWinnner
-                  }
+                  { BidWinnner }
                 </p>
               </Box>
             </Modal>

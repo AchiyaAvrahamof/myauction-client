@@ -3,20 +3,18 @@ import Product from '../product/Product';
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
-import {useSelector} from 'react-redux'
 import {useDispatch} from "react-redux"
 import{setProducts} from '../../features/prodacts'
 import {  Routes, Route } from "react-router-dom";
 import AddProduct from '../addproduct/AddProduct';
-import { Link } from 'react-router-dom';
-import {  Button, FormLabel, Grid, Input, InputLabel, TextField } from '@mui/material'
+import {  InputLabel} from '@mui/material'
 import MenuItem from '@mui/material/MenuItem';
 import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
+import MyProduct from '../myProduct/MyProduct';
 function Products() {
   const dispatch=useDispatch()
-  const user= useSelector((state)=> state.user.value)
   const [Type, setType] = useState('');
   const [allData,setAllData]=useState([])
 
@@ -41,9 +39,10 @@ function Products() {
       <Routes>
       <Route path='Product' element={ <Product/>} />   
       <Route path='AddP' element={ <AddProduct/>} />
+      <Route path='MyProduct' element={ <MyProduct/>} />
      </Routes>
 
-     <FormControl required sx={{ m: 1, minWidth: 120 }}>
+     <FormControl required sx={{ m: 1, minWidth: 120 }} className="section">
         <InputLabel id="demo-simple-select-required-label">Type</InputLabel>
         <Select
           labelId="demo-simple-select-required-label"
@@ -64,15 +63,15 @@ function Products() {
       <div className="selectorWProduct">
         {
        allData.map((e,index)=>{
-          if (e.Type==Type) {
+          if (e.Type===Type) {
             
             return <div className='allP' key={index}><ProductCard  image={e.image} index={index} productName={e.productName} id={e._id} email={e.ownerUserEmail}/></div>
           } 
-          if (Type=="") {
+          if (Type==="") {
             return <div className='allP' key={index}><ProductCard  image={e.image} index={index} productName={e.productName} id={e._id} email={e.ownerUserEmail}/></div>
             
           }   
-         
+         return console.log();
        })
       }
       </div>

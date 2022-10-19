@@ -1,0 +1,13 @@
+.allP{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5vh;
+}
+.all{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 1vh;
+    flex-direction: row;
+}

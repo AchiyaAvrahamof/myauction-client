@@ -19,10 +19,9 @@ import {useDispatch} from "react-redux"
 
 
 const pages = ['Products', 'Add new product', 'About'];
-const productsT = ['phone', 'cameras', 'computers'];
 const pagesLink = ['Products', 'AddP', 'About'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-const settingsLink = ['Profile', 'Account', 'Dashboard', '/'];
+const settings = ['Profile', 'My products', 'Dashboard', 'Logout'];
+const settingsLink = ['Profile', 'MyProduct', 'Dashboard', '/'];
 
 const ResponsiveAppBar = (props) => {
     const dispatch=useDispatch()
@@ -43,8 +42,10 @@ const ResponsiveAppBar = (props) => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  const logoutU=()=>{
+  const logoutU=(index)=>{
+    index===3?
     dispatch(logout())
+    :console.log("kjbh");
   }
   return (
     <AppBar position="static">
@@ -99,7 +100,7 @@ const ResponsiveAppBar = (props) => {
               }}
             >
               {pages.map((page,index) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
                 <Link to={`${pagesLink[index]}`}>
                   <Typography textAlign="center">{page}</Typography>
                   </Link>
@@ -130,7 +131,7 @@ const ResponsiveAppBar = (props) => {
             {pages.map((page,index) => (
                 <Link to={`${pagesLink[index]}`}>
               <Button
-                key={page}
+                key={index}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
@@ -164,9 +165,9 @@ const ResponsiveAppBar = (props) => {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting,index) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                <MenuItem key={index} onClick={handleCloseUserMenu}>
                 <Link to={`${settingsLink[index]}`}>
-                  <Typography textAlign="center" onClick={()=>logoutU()}>{setting}</Typography>
+                  <Typography textAlign="center" onClick={()=>logoutU(index)}>{setting}</Typography>
                   </Link>
                 </MenuItem>
               ))}

@@ -1,7 +1,5 @@
 import './App.css';
-import Login from './components/Login';
 import LoginForm from './components/LoginForm/LoginForm';
-import Profile from './components/Profile';
 import RegisterForm from './components/registerForm/RegisterForm';
 import {  Routes, Route } from "react-router-dom";
 import Products from './components/products/Products';
@@ -10,6 +8,7 @@ import {useSelector} from 'react-redux'
 import NoPage from './components/No page/NoPage';
 import AddProduct from './components/addproduct/AddProduct';
 import ResponsiveAppBar from './components/navBar/NavBar';
+import MyProduct from './components/myProduct/MyProduct';
 
 function App() {
   const user= useSelector((state)=> state.user.value)
@@ -28,7 +27,7 @@ function App() {
            <Route path='RegisterForm' element={ <RegisterForm/>} />
            <Route path='*' element={ <NoPage/>} />
            {user.email?     
-             <Route path='Products' element={ <Products/>} />
+             <Route path='Products/*' element={ <Products/>} />
              
              :<Route path='Products' element={ <LoginForm/>} />
             }
@@ -40,6 +39,10 @@ function App() {
             {user.email?     
            <Route path='AddP' element={ <AddProduct/>} />
              :<Route path='AddP' element={ <LoginForm/>} />
+            }
+            {user.email?     
+           <Route path='MyProduct' element={ <MyProduct/>} />
+             :<Route path='MyProduct' element={ <LoginForm/>} />
             }
              
             

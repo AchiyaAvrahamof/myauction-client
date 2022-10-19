@@ -18,3 +18,11 @@
     justify-content: space-evenly;
 
 }
+.action{
+    justify-content:center;
+    background-color: rgba(128, 128, 128, 0.278);
+    
+}
+.section{
+    width: 100%;
+}

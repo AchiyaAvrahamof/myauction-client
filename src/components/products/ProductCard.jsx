@@ -1,6 +1,5 @@
 import './Products.css';
 import axios from 'axios'
-import { useEffect, useState } from 'react';
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -37,13 +36,13 @@ const deleteProduct=(id)=>{
           alt="green iguana"
         />
       </CardActionArea>
-      <CardActions>
+      <CardActions className='action'>
         <Link to={`/Product`} onClick={()=>dispatch(setProductIndex(props.index))}>
         <Button size="small" color="primary">
           show
         </Button>
         </Link>
-        {user.email==props.email?
+        {user.email===props.email?
         <Button size="small" color="primary" onClick={()=>deleteProduct(props.id)}>
           delete
         </Button>
