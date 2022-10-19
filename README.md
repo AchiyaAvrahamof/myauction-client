@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Auction site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In our auction web application you just need to upload your product and that it,when the auction ended we will let you know who is winner.
 
-## Available Scripts
+## Table Of Contents <a name="Table"></a>
+- [Table Of Contents](#Table)
+- [Why it made and why you should use it](#why)
+- [How to run](#run)
+- [Screenshots](#Screenshots)
+- [Technologies](#Technologies)
 
+
+## Why it made and why you should use it <a name="why"></a>
+1. Because everyone has products at home that they don't need so why not offer them for sale
+2. You don't have to determine the market price is the one that determines
+3. It easy to use
+
+
+## Running the project <a name="run"></a>
 In the project directory, you can run:
 
-### `npm start`
+1.Clone the repo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2.Run `npm install`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3.run `npm start`
 
-### `npm test`
+4.Navigate to `http://localhost:3000`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.Clone the server repo.
 
-### `npm run build`
+2.Run `npm install`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3.run `nodemon server.js`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots <a name="Screenshots"></a>
+log in
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![alt text](https://res.cloudinary.com/dptzubs72/image/upload/v1666168462/2022-10-19_1_tacy2m.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+main page show all the products and can filter by Type
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![alt text](https://res.cloudinary.com/dptzubs72/image/upload/v1666168701/2022-10-19_5_jnr0og.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+product page shows all the data and allows you to give a bid 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![alt text](https://res.cloudinary.com/dptzubs72/image/upload/v1666169269/2022-10-19_6_gnrcyb.png)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies <a name="Technologies"></a>
+   Client:
+   
+   -ReactJs
+   
+   -Redux
+   
+   Server:
+   
+   -Node.js
+   
+   -express
+   
+   -mongoDB
+   
