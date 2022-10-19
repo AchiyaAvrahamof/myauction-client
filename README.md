@@ -33,14 +33,21 @@ In the project directory, you can run:
 3.run `nodemon server.js`.
 
 ## Screenshots <a name="Screenshots"></a>
-**log in** 
+log in
 
 ![alt text](https://res.cloudinary.com/dptzubs72/image/upload/v1666168462/2022-10-19_1_tacy2m.png)
 
 
 
+main page show all the products and can filter by Type
+
+
 ![alt text](https://res.cloudinary.com/dptzubs72/image/upload/v1666168701/2022-10-19_5_jnr0og.png)
-![alt text](image.jpg)
+
+
+product page shows all the data and allows you to give a bid 
+
+![alt text](https://res.cloudinary.com/dptzubs72/image/upload/v1666169269/2022-10-19_6_gnrcyb.png)
 
 ### `npm test`
 
