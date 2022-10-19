@@ -19,7 +19,7 @@ In our auction web application you just need to upload your product and that it,
 In the project directory, you can run:
 1.Clone the repo.
 2.Run npm install.
-3.run ### `npm start`
+3.run ###`npm start`
 
 1.Clone the server repo.
 2.Run ###`npm install`.
