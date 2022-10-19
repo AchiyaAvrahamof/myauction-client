@@ -2,7 +2,10 @@
 
 In our auction web application you just need to upload your product and that it,when the auction ended we will let you know who is winner.
 
-## Available Scripts
+## Table Of Contents
+- Why was Goolo made and why you should use it
+- Second item
+- Third item
 
 In the project directory, you can run:
 
