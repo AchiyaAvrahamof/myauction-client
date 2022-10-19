@@ -19,7 +19,7 @@ In the project directory, you can run:
 
 1.Clone the repo.
 
-2.Run npm install.
+2.Run `npm install`.
 
 3.run `npm start`
 
