@@ -2,9 +2,9 @@
 
 In our auction web application you just need to upload your product and that it,when the auction ended we will let you know who is winner.
 
-## Table Of Contents
+## Table Of Contents <a name="Table"></a>
 - Why was Goolo made and why you should use it
-- [Table Of Contents](#Table Of Contents)
+- [Table Of Contents](#Table)
 - Third item
 
 In the project directory, you can run:
