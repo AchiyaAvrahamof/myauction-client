@@ -8,6 +8,7 @@ In our auction web application you just need to upload your product and that it,
 - [How to run](#run)
 - [Screenshots](#Screenshots)
 - [Technologies](#Technologies)
+- [What next](#next)
 
 
 ## Why it made and why you should use it <a name="why"></a>
@@ -65,3 +66,7 @@ product page shows all the data and allows you to give a bid
    
    -mongoDB
    
+## What next <a name="next"></a>
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
