@@ -52,12 +52,17 @@ product page shows all the data and allows you to give a bid
 
 ## Technologies <a name="Technologies"></a>
    ##Client
+   
    -ReactJs
+   
    -Redux
    
    ##Server
+   
    -Node.js
+   
    -express
+   
    -mongoDB
    
 
