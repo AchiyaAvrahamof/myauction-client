@@ -67,6 +67,6 @@ product page shows all the data and allows you to give a bid
    -mongoDB
    
 ## What next <a name="next"></a>
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+- [x] create my product page
+- [ ] make top baded section
+- [ ] send email to the seller
