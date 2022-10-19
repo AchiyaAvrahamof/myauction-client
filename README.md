@@ -3,8 +3,9 @@
 In our auction web application you just need to upload your product and that it,when the auction ended we will let you know who is winner.
 
 ## Table Of Contents <a name="Table"></a>
-- [Why it made and why you should use it](#Table)
 - [Table Of Contents](#Table)
+- [Why it made and why you should use it](#why)
+
 
 ## Why it made and why you should use it <a name="why"></a>
 1. Because everyone has products at home that they don't need so why not offer them for sale
@@ -14,8 +15,14 @@ In our auction web application you just need to upload your product and that it,
 
 
 In the project directory, you can run:
+1.Clone the repo.
+2.Run npm install.
+3.run ### `npm start`
 
-### `npm start`
+1.Clone the server repo.
+2.Run ###`npm install`.
+run ###`nodemon server.js`.
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
