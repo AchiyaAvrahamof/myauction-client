@@ -16,7 +16,6 @@ export default function AddProduct() {
   const [imageSelected, setImageSelected] = useState("")
   const [imageUrl, setImageUrl] = useState("")
   const [Type, setType] = useState('');
-
   const [ProductN, setProductN] = useState("")
   const [Description, setDescription] = useState("")
   const [dayStart, setDayStart] = useState("")
@@ -63,13 +62,14 @@ export default function AddProduct() {
     setSubmited(true)
 
   }
+  
   useEffect(()=>{
-    if(submited!==false){
+    if(submited!==false && imageUrl!==""){
       postProduct(state)
       alert("הדיווח נשלח")
       return navigate("/Products")
     }
-  },[imageUrl])
+  })
   return (
     <div>
         <div className='allForm'>
