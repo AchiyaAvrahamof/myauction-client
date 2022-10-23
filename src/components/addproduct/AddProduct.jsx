@@ -75,9 +75,7 @@ export default function AddProduct() {
         <div className='allForm'>
           <h2>
             Add product
-          </h2>
-          
-            
+          </h2> 
         <TextField label={'Product name'} id="margin-normal" margin="normal" onChange={(e) => setProductN(e.target.value)}/>
          
         <TextField id="outlined-multiline-static" label="Description" multiline rows={2} onChange={(e) => setDescription(e.target.value)}/>
