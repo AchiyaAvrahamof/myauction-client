@@ -13,6 +13,7 @@ import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import MyProduct from '../myProduct/MyProduct';
+import MyBids from '../myBids/MyBids';
 function Products() {
   const dispatch=useDispatch()
   const [Type, setType] = useState('');
@@ -40,6 +41,7 @@ function Products() {
       <Route path='Product' element={ <Product/>} />   
       <Route path='AddP' element={ <AddProduct/>} />
       <Route path='MyProduct' element={ <MyProduct/>} />
+      <Route path='MyBids' element={ <MyBids/>} />
      </Routes>
 
      <FormControl required sx={{ m: 1, minWidth: 120 }} className="section">

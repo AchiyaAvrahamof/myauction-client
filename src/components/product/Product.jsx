@@ -27,24 +27,24 @@ function Product() {
     console.log({ email: user.email, bit: bitsegested });
     if (bitsegested > LastBid) {
       if (LastBid < 100 && bitsegested - LastBid >= 5) {
-        const res = axios.patch(
-          `http://localhost:5000/api/auction/${products[productIndex]?._id}`,
+         axios.patch(
+          `/api/auction/${products[productIndex]?._id}`,
           { email: user.email, bit: bitsegested }
         );
         alert("You bade");
         return navigate("/Products");
       }
       if (LastBid < 1000 && LastBid > 100 && bitsegested - LastBid >= 10) {
-        const res = axios.patch(
-          `http://localhost:5000/api/auction/${products[productIndex]?._id}`,
+         axios.patch(
+          `/api/auction/${products[productIndex]?._id}`,
           { email: user.email, bit: bitsegested }
         );
         alert("You bade");
         return navigate("/Products");
       }
       if (LastBid > 1000 && bitsegested - LastBid >= 20) {
-        const res = axios.patch(
-          `http://localhost:5000/api/auction/${products[productIndex]?._id}`,
+         axios.patch(
+          `/api/auction/${products[productIndex]?._id}`,
           { email: user.email, bit: bitsegested }
         );
         alert("Submited");

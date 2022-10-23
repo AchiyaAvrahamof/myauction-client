@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";    
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+
 import './LoginForm.css'
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
@@ -20,36 +19,34 @@ const loginSchema = Yup.object().shape({
     export default function LoginForm() {
         const dispatch=useDispatch()
 
-        const [user, setUser] = useState(null)
     const [error, setError] = useState(false)
-    const [success, setSuccess] = useState(false)
     const [message, setMessage] = useState("")
-
     const navigate = useNavigate();
-        const postUser = (e) => {
-            axios.post('http://localhost:5000/api/login', e)
-            .then((res) =>{ 
-                const data = res.data
-                setError(data.error)
-                setMessage(data.message)
+    const postUser = (e) => {
+      axios.post('/api/login', e)
+      .then((res) =>{ 
+        const data = res.data
+        setError(data.error)
+        setMessage(data.message)
                 if(data.error){
-                    return navigate("/RegisterForm")
+                  return navigate("/RegisterForm")
                 }
                 if(!data.error){
-                    dispatch(login({ first_name:data.first_name,last_name:data.last_name,email:data.email}))
-
+                  dispatch(login({ first_name:data.first_name,last_name:data.last_name,email:data.email}))
+                  
                     return navigate("/Products")
                 }
             })
           }
 
-        const  handleSubmit = (values, { setSubmitting }) => {
+          const  handleSubmit = (values, { setSubmitting }) => {
             
                 postUser(values)
-            
+                
           }
+          console.log(error+message);
 
-      return (
+          return (
         <div className="allDiv">
          <>
         <h1 className="title">Login</h1>

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const schema = yup.object().shape({
   email: yup.string().email().required(),
@@ -13,16 +14,16 @@ const schema = yup.object().shape({
 });
 
 const RegisterForm = () => {
-    const [user, setUser] = useState(null)
-  const [error, setError] = useState(false)
-  const [success, setSuccess] = useState(false)
-  const [message, setMessage] = useState("")
-  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+  const navigate = useNavigate();
+
+  const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(schema),
   });
   const postUser = (e) => {
-    axios.post('http://localhost:5000/api/register', e)
-      .then(console.log("send"))
+    axios.post('/api/register', e)
+      .then(()=>{
+        alert("Signup secssefully")
+        navigate("/")})
       .catch((error) => {
         if( error.response ){
             console.log(error.response.data); // => the response payload 

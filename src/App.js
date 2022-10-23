@@ -9,6 +9,7 @@ import NoPage from './components/No page/NoPage';
 import AddProduct from './components/addproduct/AddProduct';
 import ResponsiveAppBar from './components/navBar/NavBar';
 import MyProduct from './components/myProduct/MyProduct';
+import MyBids from './components/myBids/MyBids';
 
 function App() {
   const user= useSelector((state)=> state.user.value)
@@ -43,6 +44,10 @@ function App() {
             {user.email?     
            <Route path='MyProduct' element={ <MyProduct/>} />
              :<Route path='MyProduct' element={ <LoginForm/>} />
+            }
+            {user.email?     
+           <Route path='MyBids' element={ <MyBids/>} />
+             :<Route path='MyBids' element={ <LoginForm/>} />
             }
              
             

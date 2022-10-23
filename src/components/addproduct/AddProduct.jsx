@@ -1,11 +1,11 @@
-import {  Button, FormLabel, Grid, Input, InputLabel, TextField } from '@mui/material'
+import {  Button, FormLabel, InputLabel, TextField } from '@mui/material'
 import React, { useState } from 'react'
 import "./AddProduct.css"
 import Axios from 'axios'
 import MenuItem from '@mui/material/MenuItem';
 import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
 import {useSelector} from 'react-redux'
 import axios from 'axios'
 import { Link } from 'react-router-dom';
@@ -55,7 +55,7 @@ export default function AddProduct() {
     console.log("secccsed upload image");
   }
   const postProduct = (report) => {
-    axios.post('http://localhost:5000/api/auction', report)
+    axios.post('/api/auction', report)
       .then(console.log(report))
   }
   const submit = () => {
@@ -64,7 +64,7 @@ export default function AddProduct() {
 
   }
   useEffect(()=>{
-    if(submited!=false){
+    if(submited!==false){
       postProduct(state)
       alert("הדיווח נשלח")
       return navigate("/Products")

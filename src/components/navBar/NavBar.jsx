@@ -20,8 +20,8 @@ import {useDispatch} from "react-redux"
 
 const pages = ['Products', 'Add new product', 'About'];
 const pagesLink = ['Products', 'AddP', 'About'];
-const settings = ['Profile', 'My products', 'Dashboard', 'Logout'];
-const settingsLink = ['Profile', 'MyProduct', 'Dashboard', '/'];
+const settings = ['Profile', 'My products', 'My Bids and winning', 'Logout'];
+const settingsLink = ['Profile', 'MyProduct', 'MyBids', '/'];
 
 const ResponsiveAppBar = (props) => {
     const dispatch=useDispatch()
@@ -63,7 +63,7 @@ const ResponsiveAppBar = (props) => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'yellow',
               textDecoration: 'none',
             }}
           >
