@@ -91,7 +91,7 @@ function Product() {
         setTimeLeft("Time ended");
       }
     }, 1000);
-  }, []);
+  });
   const style = {
     position: 'absolute',
     top: '50%',
