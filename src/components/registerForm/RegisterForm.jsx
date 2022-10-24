@@ -20,7 +20,7 @@ const RegisterForm = () => {
     resolver: yupResolver(schema),
   });
   const postUser = (e) => {
-    axios.get('/api/register')
+    axios.get('https://calm-khakis-ray.cyclic.app/api/register')
     .then(()=>console.log("work"))
     axios.post('/api/register', e)
       .then(()=>{
