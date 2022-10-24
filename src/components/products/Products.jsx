@@ -23,7 +23,7 @@ function Products() {
     setType(event.target.value);
   };
   const getProductD = () => {
-    axios.get('/api/auction')
+    axios.get(`${process.env.REACT_APP_SECRET_NAME_backendURL}/api/auction`)
     .then((res) => {
       res.data && setAllData([...res.data])
       dispatch(setProducts(allData))

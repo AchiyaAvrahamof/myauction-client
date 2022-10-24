@@ -15,7 +15,7 @@ function ProductCard(props) {
   const user= useSelector((state)=> state.user.value)
   const dispatch=useDispatch()
 const deleteProduct=(id)=>{
-  axios.delete(`/api/auction/${id}`).then()
+  axios.delete(`${process.env.REACT_APP_SECRET_NAME_backendURL}/api/auction/${id}`).then()
 
 }
   return (

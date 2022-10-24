@@ -20,9 +20,9 @@ const RegisterForm = () => {
     resolver: yupResolver(schema),
   });
   const postUser = (e) => {
-    axios.get('https://calm-khakis-ray.cyclic.app/api/register')
+    axios.get(`${process.env.REACT_APP_SECRET_NAME_backendURL}/api/register`)
     .then(()=>console.log("work"))
-    axios.post(`${process.env.backendURL}/api/register`, e)
+    axios.post(`${process.env.REACT_APP_SECRET_NAME_backendURL}/api/register`, e)
       .then(()=>{
         alert("Signup secssefully")
         navigate("/")})

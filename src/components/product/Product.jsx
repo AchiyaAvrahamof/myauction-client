@@ -28,7 +28,7 @@ function Product() {
     if (bitsegested > LastBid) {
       if (LastBid < 100 && bitsegested - LastBid >= 5) {
          axios.patch(
-          `${process.env.backendURL}/api/auction/${products[productIndex]?._id}`,
+          `${process.env.REACT_APP_SECRET_NAME_backendURL}/api/auction/${products[productIndex]?._id}`,
           { email: user.email, bit: bitsegested }
         );
         alert("You bade");
@@ -36,7 +36,7 @@ function Product() {
       }
       if (LastBid < 1000 && LastBid > 100 && bitsegested - LastBid >= 10) {
          axios.patch(
-          `/api/auction/${products[productIndex]?._id}`,
+          `${process.env.REACT_APP_SECRET_NAME_backendURL}/api/auction/${products[productIndex]?._id}`,
           { email: user.email, bit: bitsegested }
         );
         alert("You bade");
@@ -44,7 +44,7 @@ function Product() {
       }
       if (LastBid > 1000 && bitsegested - LastBid >= 20) {
          axios.patch(
-          `/api/auction/${products[productIndex]?._id}`,
+          `${process.env.REACT_APP_SECRET_NAME_backendURL}/api/auction/${products[productIndex]?._id}`,
           { email: user.email, bit: bitsegested }
         );
         alert("Submited");

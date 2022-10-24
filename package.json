@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@hookform/resolvers": "^2.9.8",
@@ -22,7 +23,9 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.0",
     "web-vitals": "^2.1.4",
-    "yup": "^0.27.0"
+    "yup": "^0.27.0",
+    "dotenv": "^16.0.2"
+
   },
   "scripts": {
     "start": "react-scripts start",

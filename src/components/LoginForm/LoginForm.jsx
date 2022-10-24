@@ -23,7 +23,7 @@ const loginSchema = Yup.object().shape({
     const [message, setMessage] = useState("")
     const navigate = useNavigate();
     const postUser = (e) => {
-      axios.post(`${process.env.backendURL}/api/login`, e)
+      axios.post(`${process.env.REACT_APP_SECRET_NAME_backendURL}/api/login`, e)
       .then((res) =>{ 
         const data = res.data
         setError(data.error)
