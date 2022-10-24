@@ -54,7 +54,7 @@ export default function AddProduct() {
     console.log("secccsed upload image");
   }
   const postProduct = (report) => {
-    axios.post('/api/auction', report)
+    axios.post(`${process.env.backendURL}/api/auction`, report)
       .then(console.log(report))
   }
   const submit = () => {

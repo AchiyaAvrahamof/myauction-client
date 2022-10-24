@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+
 function Product() {
   const products = useSelector((state) => state.product.value);
   const productIndex = useSelector((state) => state.productIndex.value);
@@ -126,7 +127,7 @@ function Product() {
           </Grid>
         </Grid>
         <Grid item xs={12} className="DateAndPrice">
-          <Grid h6 xs={4}>
+          <Grid item h6 xs={4}>
             <InputLabel>
               Date start
               <Input
