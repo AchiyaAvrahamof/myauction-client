@@ -39,7 +39,7 @@ const RegisterForm = () => {
   };
   return (
     <form onSubmit={handleSubmit(onSubmitHandler)}>
-      <h2>Lets sign you in.</h2>
+      <h2>Lets sign you in. To start</h2>
       <br />
 
       <input
