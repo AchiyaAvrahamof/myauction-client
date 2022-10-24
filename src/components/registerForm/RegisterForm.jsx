@@ -20,6 +20,8 @@ const RegisterForm = () => {
     resolver: yupResolver(schema),
   });
   const postUser = (e) => {
+    axios.get('/api/register')
+    .then(()=>console.log("work"))
     axios.post('/api/register', e)
       .then(()=>{
         alert("Signup secssefully")
