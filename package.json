@@ -48,5 +48,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://calm-khakis-ray.cyclic.app"
+  "proxy": "https://calm-khakis-ray.cyclic.app:5000"
 }
