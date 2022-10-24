@@ -22,7 +22,7 @@ const RegisterForm = () => {
   const postUser = (e) => {
     axios.get('https://calm-khakis-ray.cyclic.app/api/register')
     .then(()=>console.log("work"))
-    axios.post('/api/register', e)
+    axios.post(`${process.env.backendURL}/api/register`, e)
       .then(()=>{
         alert("Signup secssefully")
         navigate("/")})

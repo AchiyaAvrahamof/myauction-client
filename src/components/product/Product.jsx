@@ -28,7 +28,7 @@ function Product() {
     if (bitsegested > LastBid) {
       if (LastBid < 100 && bitsegested - LastBid >= 5) {
          axios.patch(
-          `/api/auction/${products[productIndex]?._id}`,
+          `${process.env.backendURL}/api/auction/${products[productIndex]?._id}`,
           { email: user.email, bit: bitsegested }
         );
         alert("You bade");
