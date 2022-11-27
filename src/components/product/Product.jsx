@@ -85,14 +85,14 @@ function Product() {
       // Output the result
       setTimeLeft(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
 
-      // If the count down is over, write some text
+      // If the count down  is over, write some text
       if (distance < 0) {
         clearInterval(x);
         console.log("end");
         setTimeLeft("Time ended");
       }
     }, 1000);
-  });
+  });  
   const style = {
     position: 'absolute',
     top: '50%',

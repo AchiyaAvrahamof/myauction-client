@@ -46,7 +46,7 @@ export default function AddProduct() {
 
   const uploadImage = () => {
     const formData = new FormData()
-    formData.append('file', imageSelected)
+    formData.append('file', imageSelected)   
     formData.append('upload_preset', "gizlgebs")
 
     Axios.post("https://api.cloudinary.com/v1_1/dptzubs72/image/upload", formData)
@@ -54,7 +54,7 @@ export default function AddProduct() {
     console.log("secccsed upload image");
   }
   const postProduct = (report) => {
-    axios.post(`${process.env.backendURL}/api/auction`, report)
+    axios.post(`${process.env.REACT_APP_SECRET_NAME_backendURL}/api/auction`, report)
       .then(console.log(report))
   }
   const submit = () => {
@@ -109,7 +109,7 @@ export default function AddProduct() {
         <TextField label={'Start price'} id="margin-normal" margin="normal" type={"number"} onChange={(e) => setStartBit(e.target.value)}/>
         <FormLabel>
         photo
-        <TextField  id="margin-normal" margin="normal" type={"file"} onChange={(event) => setImageSelected(event.target.files[0])} />
+           <TextField  id="margin-normal" margin="normal" type={"file"} onChange={(event) => setImageSelected(event.target.files[0])} />
         </FormLabel>
           <Button onClick={()=>submit()}>Add product</Button>
           <Link to="/Products">Back</Link>
