@@ -58,6 +58,10 @@ product page shows all the data and allows you to give a bid
    
    -Redux
    
+   -bycrpt
+   
+   -cloudinary
+   
    Server:
    
    -Node.js
